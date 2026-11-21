@@ -9,12 +9,12 @@ jobs:
     name: Prettier
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v4
     - name: Yarn
-      uses: Borales/actions-yarn@master
+      uses: Borales/actions-yarn@v5
       with:
         args: install
     - name: Prettier
-      uses: Borales/actions-yarn@master
+      uses: Borales/actions-yarn@v5
       with:
         args: run prettier-check
