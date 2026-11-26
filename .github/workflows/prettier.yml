@@ -13,8 +13,8 @@ jobs:
     - name: Yarn
       uses: Borales/actions-yarn@master
       with:
-        args: install
+        cmd: install
     - name: Prettier
       uses: Borales/actions-yarn@master
       with:
-        args: run prettier-check
+        cmd: run prettier-check
